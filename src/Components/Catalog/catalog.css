@@ -1,0 +1,144 @@
+.catalog-header{
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.catalog-header-main{
+    display: flex;
+}
+  
+.catalog-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #333;
+    margin-right: 5px;
+}
+  
+.catalog-counter{
+    background-color: rgba(0, 0, 0, .25);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.page-not-found{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.catalog-container{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.catalog-item{
+    padding: 20px;
+    transition: all ease .2s;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-item:hover{
+    border: 1px solid #ed6b21;
+}
+
+.catalog-item:hover .catalog-photo{
+    transform: scale(1.1);
+}
+
+.catalog-photo{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    transition: all ease .3s;
+}
+
+.catalog-name{
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    transition: all ease .2s;
+}
+
+.catalog-name:hover{
+    color: #ed6b21;
+}
+
+.catalog-price{
+    text-align: center;
+    color: #ed6b21;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.btn-order{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 1.42857;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ed6b21;
+    margin-top: 15px;
+    width: 100%;
+    border: 1px solid #ed6b21;
+    transition: all ease .3s;    
+}
+
+.btn-order:hover{
+    background: transparent;
+    border: 1px solid #333;
+    color: #333;
+}
+
+@media(max-width: 1500px){
+    .catalog-name{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 1200px){
+    .catalog-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 768px){
+    .catalog-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ant-breadcrumb{
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .catalog-header{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

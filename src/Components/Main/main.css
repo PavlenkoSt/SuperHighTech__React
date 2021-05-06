@@ -1,0 +1,39 @@
+.main-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    min-height: 100%;
+}
+
+.main-header{
+    display: flex;
+    padding: 15px;
+    margin: 0 -15px;
+    color: #fff;
+    background-color: #ed6b21;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.main-carousel{
+    margin: -40px -15px 0px;
+}
+
+@media(max-width: 768px){
+    .main-carousel{
+        margin: -55px -15px 0px;
+    }
+}
+
+@media(max-width: 500px){
+    .main-header{
+        padding: 10px;
+        font-size: 15px;
+    }
+}
