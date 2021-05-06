@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/superHighTech__React/static/css/main.be6d7600.chunk.css",
+    "main.js": "/superHighTech__React/static/js/main.bfad00f0.chunk.js",
+    "main.js.map": "/superHighTech__React/static/js/main.bfad00f0.chunk.js.map",
+    "runtime-main.js": "/superHighTech__React/static/js/runtime-main.0b4454a6.js",
+    "runtime-main.js.map": "/superHighTech__React/static/js/runtime-main.0b4454a6.js.map",
+    "static/css/2.21faa3a9.chunk.css": "/superHighTech__React/static/css/2.21faa3a9.chunk.css",
+    "static/js/2.72f9b426.chunk.js": "/superHighTech__React/static/js/2.72f9b426.chunk.js",
+    "static/js/2.72f9b426.chunk.js.map": "/superHighTech__React/static/js/2.72f9b426.chunk.js.map",
+    "static/js/3.6e2d2211.chunk.js": "/superHighTech__React/static/js/3.6e2d2211.chunk.js",
+    "static/js/3.6e2d2211.chunk.js.map": "/superHighTech__React/static/js/3.6e2d2211.chunk.js.map",
+    "index.html": "/superHighTech__React/index.html",
+    "static/css/2.21faa3a9.chunk.css.map": "/superHighTech__React/static/css/2.21faa3a9.chunk.css.map",
+    "static/css/main.be6d7600.chunk.css.map": "/superHighTech__React/static/css/main.be6d7600.chunk.css.map",
+    "static/js/2.72f9b426.chunk.js.LICENSE.txt": "/superHighTech__React/static/js/2.72f9b426.chunk.js.LICENSE.txt",
+    "static/media/1.0b61a0f6.jpeg": "/superHighTech__React/static/media/1.0b61a0f6.jpeg",
+    "static/media/2.4a9dc005.jpg": "/superHighTech__React/static/media/2.4a9dc005.jpg",
+    "static/media/3.70e74fd6.jpg": "/superHighTech__React/static/media/3.70e74fd6.jpg",
+    "static/media/bluetooth-garnitura-apple-airpods-2-white-mv7n2.ec93c4b4.jpg": "/superHighTech__React/static/media/bluetooth-garnitura-apple-airpods-2-white-mv7n2.ec93c4b4.jpg",
+    "static/media/fitnes-treker-xiaomi-mi-smart-band-5-black.1d775ff7.jpg": "/superHighTech__React/static/media/fitnes-treker-xiaomi-mi-smart-band-5-black.1d775ff7.jpg",
+    "static/media/hd-multimedia-pleer-apple-tv-4k-32gb-black.e27c9531.jpg": "/superHighTech__React/static/media/hd-multimedia-pleer-apple-tv-4k-32gb-black.e27c9531.jpg",
+    "static/media/mobilnyj-telefon-apple-iphone-xr-128gb-black.ecc3e8e9.jpg": "/superHighTech__React/static/media/mobilnyj-telefon-apple-iphone-xr-128gb-black.ecc3e8e9.jpg",
+    "static/media/mobilnyj-telefon-huawei-y6p-64gb-black.9fb8f37b.jpg": "/superHighTech__React/static/media/mobilnyj-telefon-huawei-y6p-64gb-black.9fb8f37b.jpg",
+    "static/media/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-black.38d73a49.jpg": "/superHighTech__React/static/media/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-black.38d73a49.jpg",
+    "static/media/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-blue.5279ec94.jpg": "/superHighTech__React/static/media/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-blue.5279ec94.jpg",
+    "static/media/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-red.f5457742.jpg": "/superHighTech__React/static/media/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-red.f5457742.jpg",
+    "static/media/mobilnyj-telefon-zte-blade-l8-16gb-blue.4bd38033.jpg": "/superHighTech__React/static/media/mobilnyj-telefon-zte-blade-l8-16gb-blue.4bd38033.jpg",
+    "static/media/visa.734034fa.png": "/superHighTech__React/static/media/visa.734034fa.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0b4454a6.js",
+    "static/css/2.21faa3a9.chunk.css",
+    "static/js/2.72f9b426.chunk.js",
+    "static/css/main.be6d7600.chunk.css",
+    "static/js/main.bfad00f0.chunk.js"
+  ]
+}
