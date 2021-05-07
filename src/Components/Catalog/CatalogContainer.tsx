@@ -31,18 +31,17 @@ const CatalogContainer: FC<RouteComponentProps & CatalogPropsType> = observer(({
 
     const [styles, api] = useSpring(() => ({ opacity: 0, transform: 'scale(0.8)', config: config.molasses }))
 
-    const animation = () => {
+    const animation = async () => {
         api.start({ opacity: 0, transform: `scale(0.8)` })
-
-        setTimeout(() => {
-            api.start({ opacity: 1, transform: `scale(1)` })
-        }, 100);
     }
 
     useEffect(() => {
         animation()
-    }, [location.pathname, pages.sideSortedOption])
+    }, [location.pathname, pages.sideFilteredOptions.category, pages.sideSortedOption])
 
+    useEffect(() => {
+        pages.setCurrentPage(1) 
+    }, [pages.activeLink, pages.sideFilteredOptions.category.length, pages.sideFilteredOptions.price])
 
     if(!page.length && !isSearchPage){
         return <animated.div style={styles}><p className='page-not-found'>Ой, что-то пошло не так! Данной страницы не существует!</p></animated.div>
@@ -58,8 +57,14 @@ const CatalogContainer: FC<RouteComponentProps & CatalogPropsType> = observer(({
         url={product.url}
     />) : null
 
-    const header = page.length ? page[0].header : searchSearch && searchSearch[2]
-    const counter = pages.totalCount
+    useEffect(() => {
+        setTimeout(() => {
+            api.start({ opacity: 1, transform: `scale(1)` })
+        }, 100);
+    }, [iterationItems])
+
+    const header = searchSearch ? searchSearch[2] : page.length ? page[0].header : ''
+    const counter = searchSearch ? catalogItems.length : pages.totalCount
 
     if(!catalogItems || !catalogItems.length){
         return <animated.div style={styles}><p className='page-not-found'>По данному запросу товаров не найдено!</p></animated.div>

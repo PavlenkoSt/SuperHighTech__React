@@ -8,7 +8,7 @@ import SliderEl from './Slider/Slider'
 import './sidebar.css'
 import Categories from './Categories/Categories'
 import { FC } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, RouteComponentProps, withRouter } from 'react-router-dom'
 import Search from '../Header/Search/Search'
 
 export type SidebarOptionsType = {
@@ -19,8 +19,11 @@ type OwnPropsType = {
     sidebarOptions: SidebarOptionsType
 }
 
-const Sidebar: FC<OwnPropsType> = ({ sidebarOptions }) => {
+const Sidebar: FC<RouteComponentProps & OwnPropsType> = ({ sidebarOptions, location }) => {
     const { SubMenu } = Menu
+
+    const searchSearch = location.pathname.match(/\/(search)\/(.+)/)
+    const isSearchPage = searchSearch && searchSearch[1] === 'search'
 
     return (
         <div className={`sideMenu small`}>
@@ -33,10 +36,12 @@ const Sidebar: FC<OwnPropsType> = ({ sidebarOptions }) => {
                     <NavLink className='sidebar-link' to='/'>Вход | Регистрация</NavLink>
                     <NavLink className='sidebar-link' to='/'>На главную</NavLink>
                 </SubMenu>
+            { isSearchPage ? null : (
                 <SubMenu key="sub2" icon={<PieChartOutlined />} title="Фильтры">
                     <SliderEl/>
                     <Categories sidebarOptions={sidebarOptions} />
                 </SubMenu>
+            )}   
                 <SubMenu key="sub3" icon={<SearchOutlined />} title="Поиск" className='search-submenu' >
                     <Search/>
                 </SubMenu>
@@ -45,4 +50,4 @@ const Sidebar: FC<OwnPropsType> = ({ sidebarOptions }) => {
     )
 }
 
-export default Sidebar
+export default withRouter(Sidebar)

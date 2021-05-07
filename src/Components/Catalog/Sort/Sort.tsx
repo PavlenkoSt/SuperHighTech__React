@@ -1,13 +1,20 @@
 import { Select } from 'antd';
+import { FC } from 'react';
+import { RouteComponentProps, withRouter } from 'react-router';
 import pages from '../../../MobX/pages';
 
 
-const Sort = () => {
+const Sort: FC<RouteComponentProps> = ({ location }) => {
     const { Option } = Select;
 
     const handleChange = (value: any) => {
-    console.log(`selected ${value}`);
         pages.setSideSortedOption(value)
+    }
+
+    const searchSearch = location.pathname.match(/\/(search)\/(.+)/)
+
+    if(searchSearch && searchSearch[1] === 'search'){
+        return null
     }
 
     return (
@@ -19,4 +26,4 @@ const Sort = () => {
     )
 }
 
-export default Sort
+export default withRouter(Sort)

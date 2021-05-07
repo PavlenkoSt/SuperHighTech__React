@@ -12,10 +12,10 @@ const SuperPrice: FC<RouteComponentProps> = ({ location }) => {
         name={product.name} 
         price={product.price}
         photo={product.photo}
-        path={location.pathname}
+        path={''}
         url={product.url}
     />)
-    
+
     return (
         <div>
             <h2 className='main-header'>Суперцена</h2>

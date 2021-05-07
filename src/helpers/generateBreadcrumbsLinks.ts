@@ -41,7 +41,7 @@ export default function generateBreadcrumbsLinks(pathAdress: any, breadcrumbValu
             return generateBreadcrumbsLinks(path, breadcrumbs)
         }
     }else{
-        breadcrumbs.push({ path: '', breadcrumbName: 'Главная' })
+        breadcrumbs.push({ path: '/', breadcrumbName: 'Главная' })
     }
     return breadcrumbs.reverse()
 }

@@ -124,6 +124,9 @@
     .catalog-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .catalog-item{
+        padding: 20px;
+    }
 }
 
 @media(max-width: 768px){
