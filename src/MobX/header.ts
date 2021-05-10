@@ -9,7 +9,7 @@ class Header {
         { link: '/super-price', name: 'Суперцена' },
         { link: '/apple', name: 'Apple' },
         { link: '/samsung', name: 'Samsung' },
-        { link: '/xiaomy', name: 'Xiaomy' },
+        { link: '/xiaomi', name: 'Xiaomi' },
         { link: '/huawei', name: 'Huawei' },
         { link: '/zte', name: 'ZTE' },
         { link: '/realmy', name: 'Realmy' },

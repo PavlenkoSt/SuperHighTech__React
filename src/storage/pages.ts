@@ -21,8 +21,8 @@ const pages: Array<pageType> = [
         header: 'Samsung'
     },
     {
-        link: '/xiaomy',
-        header: 'Xiaomy'
+        link: '/xiaomi',
+        header: 'Xiaomi'
     },
     {
         link: '/huawei',

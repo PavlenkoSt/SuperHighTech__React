@@ -4,9 +4,15 @@ import bluetoothGarnituraAppleAirpods2WhiteMv7n2 from '../assets/Apple/bluetooth
 import mobilnyjTelefonSamsungGalaxyA01Core16gbSmA013Red from '../assets/Samsung/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-red.jpg'
 import mobilnyjTelefonSamsungGalaxyA01Core16gbSmA013Blue from '../assets/Samsung/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-blue.jpg'
 import mobilnyjTelefonSamsungGalaxyA01Core16gbSmA013Black from '../assets/Samsung/mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-black.jpg'
-import fitnesTrekerXiaomiMiSmartBand5Black from '../assets/Xiaomy/fitnes-treker-xiaomi-mi-smart-band-5-black.jpg'
+import fitnesTrekerXiaomiMiSmartBand5Black from '../assets/Xiaomi/fitnes-treker-xiaomi-mi-smart-band-5-black.jpg'
 import mobilnyjTelefonHuaweiY6p64gbBlack from '../assets/Huawei/mobilnyj-telefon-huawei-y6p-64gb-black.jpg'
 import mobilnyjTelefonZteBladeL816gbBlue from '../assets/ZTE/mobilnyj-telefon-zte-blade-l8-16gb-blue.jpg'
+import mobilnyjTelefonXiaomiRedmiNote9364gbPolarWhite from '../assets/Xiaomi/mobilnyj-telefon-xiaomi-redmi-note-9-364gb-polar-white.jpg'
+import mobilnyjTelefonXiaomiRedmiNote94128gbMidnightGrey from '../assets/Xiaomi/mobilnyj-telefon-xiaomi-redmi-note-9-4128gb-midnight-grey.jpg'
+import fitnesTrekerXiaomiMiBand3Black from '../assets/Xiaomi/fitnes-treker-xiaomi-mi-band-3-black.jpg'
+import fitnesTrekerHuaweiColorBandA2HonorA2Aw61Black from '../assets/Huawei/fitnes-treker-huawei-color-band-a2-honor-a2-aw61-black.jpg'
+
+
 
 export type ProductType = {
     id: number
@@ -195,7 +201,7 @@ const products: Array<ProductType> | any = [
     {
         id: 4, 
         name: 'Фитнес-трекер Xiaomi Mi Smart Band 5 Black', 
-        company: 'Xiaomy', 
+        company: 'Xiaomi', 
         price: '999,90', 
         photo: fitnesTrekerXiaomiMiSmartBand5Black,
         date: '13.4.2021',
@@ -400,6 +406,166 @@ const products: Array<ProductType> | any = [
         },
         inStock: true,
         url: 'mobilnyj-telefon-samsung-galaxy-a01-core-16gb-sm-a013-black'
+    },
+    {
+        id: 9, 
+        name: 'Мобильный телефон Xiaomi Redmi Note 9 3/64GB Polar White', 
+        company: 'Xiaomi', 
+        price: '5 195,00', 
+        photo: mobilnyjTelefonXiaomiRedmiNote9364gbPolarWhite,
+        date: '21.3.2021',
+        category: 'Redmi',
+        features: {
+            short: [
+                { name: 'Предустановленная ОС', value: 'Android' },
+                { name: 'Оперативная память, ГБ', value: '3' },
+                { name: 'Встроенная память, ГБ', value: '64' },
+                { name: 'Слот расширения', value: 'microSD' },
+                { name: 'Тип SIM-карты', value: 'Nano SIM + Nano SIM' },
+                { name: 'Гарантия', value: '12 мес'}
+            ],
+            full: [
+                { name: 'Количество SIM-карт', value: '2' },
+                { name: 'Количество ядер', value: '6' },
+                { name: 'Диагональ, дюймы', value: '6,53' },
+                { name: 'Разрешение', value: '2340x1080' },
+                { name: 'Основная камера, Мп', value: '48 + 8 + 8' },
+                { name: 'Фронтальная  камера, Мп', value: '2' },
+                { name: 'Материал корпуса', value: 'Алюминий/Стекло' },
+                { name: 'Размеры, мм', value: '150,9x75,7x8.3' },
+            ]
+        },
+        description: {
+            short: 'Использование современного процессора MediaTek Helio G85 с частотой до 2.0 ГГц позволило увеличить производительность смартфона, его вычислительную мощность и быстродействие. Redmi Note 9 легко справляется со сложными заданиями, требовательными к ресурсам играми и приложениями, демонстрируя быструю и плавную работу всех программ и систем.',
+            full: [
+                {
+                    header: '',
+                    photo: '',
+                    text: ''
+                }
+            ]
+        },
+        inStock: true,
+        url: 'mobilnyj-telefon-xiaomi-redmi-note-9-364gb-polar-white'
+    },
+    {
+        id: 10, 
+        name: 'Мобильный телефон Xiaomi Redmi Note 9 4/128GB Midnight Grey', 
+        company: 'Xiaomi', 
+        price: '5 795,00', 
+        photo: mobilnyjTelefonXiaomiRedmiNote94128gbMidnightGrey,
+        date: '21.5.2021',
+        category: 'Redmi',
+        features: {
+            short: [
+                { name: 'Предустановленная ОС', value: 'Android' },
+                { name: 'Оперативная память, ГБ', value: '4' },
+                { name: 'Встроенная память, ГБ', value: '128' },
+                { name: 'Слот расширения', value: 'microSD' },
+                { name: 'Тип SIM-карты', value: 'micro SIM + Nano SIM' },
+                { name: 'Гарантия', value: '12 мес'}
+            ],
+            full: [
+                { name: 'Количество SIM-карт', value: '2' },
+                { name: 'Количество ядер', value: '6' },
+                { name: 'Диагональ, дюймы', value: '6,53' },
+                { name: 'Разрешение', value: '2340x1080' },
+                { name: 'Основная камера, Мп', value: '48 + 8 + 8' },
+                { name: 'Фронтальная  камера, Мп', value: '2' },
+                { name: 'Материал корпуса', value: 'Алюминий/Стекло' },
+                { name: 'Размеры, мм', value: '150,9x75,7x8.3' },
+            ]
+        },
+        description: {
+            short: 'Использование современного процессора MediaTek Helio G85 с частотой до 2.0 ГГц позволило увеличить производительность смартфона, его вычислительную мощность и быстродействие. Redmi Note 9 легко справляется со сложными заданиями, требовательными к ресурсам играми и приложениями, демонстрируя быструю и плавную работу всех программ и систем.',
+            full: [
+                {
+                    header: '',
+                    photo: '',
+                    text: ''
+                }
+            ]
+        },
+        inStock: true,
+        url: 'mobilnyj-telefon-xiaomi-redmi-note-9-4128gb-midnight-grey'
+    },
+    {
+        id: 11, 
+        name: 'Фитнес-трекер Xiaomi Mi Band 3 Black', 
+        company: 'Xiaomi', 
+        price: '499,90', 
+        photo: fitnesTrekerXiaomiMiBand3Black,
+        date: '17.4.2021',
+        category: 'Xiaomi гаджеты',
+        features: {
+            short: [
+                { name: 'Диагональ, дюймы', value: '1,2' },
+                { name: 'Разрешение', value: '126x294' },
+                { name: 'Уведомления о входящих событиях', value: 'есть' },
+                { name: 'Время автономной работы', value: 'до 20 суток' },
+                { name: 'Материал корпуса', value: 'Пластик' },
+                { name: 'Дисплей, тип', value: 'OLED' },
+                { name: 'Гарантия', value: '12 мес'}
+            ],
+            full: [
+                { name: 'Пульсометр', value: '+ (оптический)' },
+                { name: 'Подсчет шагов', value: 'есть' },
+                { name: 'Отслеживание сна', value: 'есть' },
+                { name: 'Дисплей, тип', value: 'AMOLED' },
+                { name: 'Допустимый обхват запястья', value: '20 мм (ширина ремешка)' },
+                { name: 'Размеры, мм', value: '47,2х18,5х12,4' },
+            ]
+        },
+        description: {
+            short: 'Фитнес браслет Mi Smart Band 5 добавит в вашу повседневную жизнь больше комфорта и ярких красок. Чтобы подчеркнуть свою индивидуальность, установите на дисплее один из динамических или интерактивно-тематических циферблатов.',
+            full: [
+                {
+                    header: '',
+                    photo: '',
+                    text: ''
+                }
+            ]
+        },
+        inStock: true,
+        url: 'fitnes-treker-xiaomi-mi-smart-band-3-black'
+    },
+    {
+        id: 12, 
+        name: 'Фитнес-трекер Huawei Color Band A2 HONOR A2 AW61 Black', 
+        company: 'Huawei', 
+        price: '499,90', 
+        photo: fitnesTrekerHuaweiColorBandA2HonorA2Aw61Black,
+        date: '11.4.2021',
+        category: 'Huawei гаджеты',
+        features: {
+            short: [
+                { name: 'Уведомления о входящих событиях', value: '+ (звонки, сообщения)' },
+                { name: 'Время автономной работы', value: 'до 10 суток' },
+                { name: 'Материал корпуса', value: 'Пластик' },
+                { name: 'Дисплей, тип', value: 'PMOLED' },
+                { name: 'Гарантия', value: '14 дней'}
+            ],
+            full: [
+                { name: 'Пульсометр', value: '+ (оптический)' },
+                { name: 'Подсчет шагов', value: 'есть' },
+                { name: 'Отслеживание сна', value: 'есть' },
+                { name: 'Дисплей, тип', value: 'AMOLED' },
+                { name: 'Допустимый обхват запястья', value: '20 мм (ширина ремешка)' },
+                { name: 'Размеры, мм', value: '47,2х18,5х12,4' },
+            ]
+        },
+        description: {
+            short: 'Фитнес браслет Mi Smart Band 5 добавит в вашу повседневную жизнь больше комфорта и ярких красок. Чтобы подчеркнуть свою индивидуальность, установите на дисплее один из динамических или интерактивно-тематических циферблатов.',
+            full: [
+                {
+                    header: '',
+                    photo: '',
+                    text: ''
+                }
+            ]
+        },
+        inStock: true,
+        url: 'fitnes-treker-huawei-color-band-a2-honor-a2-aw61-black'
     },
 ]
 

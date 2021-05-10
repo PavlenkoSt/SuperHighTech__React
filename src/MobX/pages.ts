@@ -33,7 +33,7 @@ class Pages {
     _filterCompanyName: any = {
         '/apple': 'Apple',
         '/samsung': 'Samsung',
-        '/xiaomy': 'Xiaomy',
+        '/xiaomi': 'Xiaomi',
         '/huawei': 'Huawei',
         '/zte': 'ZTE',
         '/realmy': 'Realmy'
@@ -154,7 +154,7 @@ class Pages {
             }
             case '/apple' : 
             case '/samsung' : 
-            case '/xiaomy' : 
+            case '/xiaomi' : 
             case '/huawei' : 
             case '/zte' : 
             case '/realmy': {
