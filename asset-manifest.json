@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/superHighTech__React/static/css/main.bd34d1c0.chunk.css",
-    "main.js": "/superHighTech__React/static/js/main.6bc49d5c.chunk.js",
-    "main.js.map": "/superHighTech__React/static/js/main.6bc49d5c.chunk.js.map",
-    "runtime-main.js": "/superHighTech__React/static/js/runtime-main.0b4454a6.js",
-    "runtime-main.js.map": "/superHighTech__React/static/js/runtime-main.0b4454a6.js.map",
-    "static/css/2.21faa3a9.chunk.css": "/superHighTech__React/static/css/2.21faa3a9.chunk.css",
-    "static/js/2.3b429125.chunk.js": "/superHighTech__React/static/js/2.3b429125.chunk.js",
-    "static/js/2.3b429125.chunk.js.map": "/superHighTech__React/static/js/2.3b429125.chunk.js.map",
-    "static/js/3.6e2d2211.chunk.js": "/superHighTech__React/static/js/3.6e2d2211.chunk.js",
-    "static/js/3.6e2d2211.chunk.js.map": "/superHighTech__React/static/js/3.6e2d2211.chunk.js.map",
+    "main.css": "/superHighTech__React/static/css/main.2a61761f.chunk.css",
+    "main.js": "/superHighTech__React/static/js/main.abcb02ff.chunk.js",
+    "main.js.map": "/superHighTech__React/static/js/main.abcb02ff.chunk.js.map",
+    "runtime-main.js": "/superHighTech__React/static/js/runtime-main.3bd272e1.js",
+    "runtime-main.js.map": "/superHighTech__React/static/js/runtime-main.3bd272e1.js.map",
+    "static/css/2.e460163e.chunk.css": "/superHighTech__React/static/css/2.e460163e.chunk.css",
+    "static/js/2.cec386e1.chunk.js": "/superHighTech__React/static/js/2.cec386e1.chunk.js",
+    "static/js/2.cec386e1.chunk.js.map": "/superHighTech__React/static/js/2.cec386e1.chunk.js.map",
+    "static/js/3.ba694a54.chunk.js": "/superHighTech__React/static/js/3.ba694a54.chunk.js",
+    "static/js/3.ba694a54.chunk.js.map": "/superHighTech__React/static/js/3.ba694a54.chunk.js.map",
     "index.html": "/superHighTech__React/index.html",
-    "static/css/2.21faa3a9.chunk.css.map": "/superHighTech__React/static/css/2.21faa3a9.chunk.css.map",
-    "static/css/main.bd34d1c0.chunk.css.map": "/superHighTech__React/static/css/main.bd34d1c0.chunk.css.map",
-    "static/js/2.3b429125.chunk.js.LICENSE.txt": "/superHighTech__React/static/js/2.3b429125.chunk.js.LICENSE.txt",
+    "static/css/2.e460163e.chunk.css.map": "/superHighTech__React/static/css/2.e460163e.chunk.css.map",
+    "static/css/main.2a61761f.chunk.css.map": "/superHighTech__React/static/css/main.2a61761f.chunk.css.map",
+    "static/js/2.cec386e1.chunk.js.LICENSE.txt": "/superHighTech__React/static/js/2.cec386e1.chunk.js.LICENSE.txt",
     "static/media/1.0b61a0f6.jpeg": "/superHighTech__React/static/media/1.0b61a0f6.jpeg",
     "static/media/2.4a9dc005.jpg": "/superHighTech__React/static/media/2.4a9dc005.jpg",
     "static/media/3.70e74fd6.jpg": "/superHighTech__React/static/media/3.70e74fd6.jpg",
@@ -28,10 +28,10 @@
     "static/media/visa.734034fa.png": "/superHighTech__React/static/media/visa.734034fa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0b4454a6.js",
-    "static/css/2.21faa3a9.chunk.css",
-    "static/js/2.3b429125.chunk.js",
-    "static/css/main.bd34d1c0.chunk.css",
-    "static/js/main.6bc49d5c.chunk.js"
+    "static/js/runtime-main.3bd272e1.js",
+    "static/css/2.e460163e.chunk.css",
+    "static/js/2.cec386e1.chunk.js",
+    "static/css/main.2a61761f.chunk.css",
+    "static/js/main.abcb02ff.chunk.js"
   ]
 }
