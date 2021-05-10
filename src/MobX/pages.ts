@@ -24,6 +24,21 @@ class Pages {
     
     load: boolean = true
 
+    activeProducts:any = []
+
+    totalCount: number = 0
+
+    currentPage: number = 1
+
+    _filterCompanyName: any = {
+        '/apple': 'Apple',
+        '/samsung': 'Samsung',
+        '/xiaomy': 'Xiaomy',
+        '/huawei': 'Huawei',
+        '/zte': 'ZTE',
+        '/realmy': 'Realmy'
+    }
+
     changeLoadStatus(status: boolean){
         this.load = status
     }
@@ -104,12 +119,11 @@ class Pages {
         makeAutoObservable(this)
     }
 
-    activeProducts:any = []
 
-    splitProductsToPortion(arr: any){
-        let obj: any = Object.assign(arr)
+    splitProductsToPortion(arr: Array<ProductType>){
+        let obj: Array<ProductType> = Object.assign(arr)
         const countIteration = Math.ceil(arr.length / 8)
-        const res: any = []
+        const res: Array<Array<ProductType>> = []
         for(let i = 1; i <= countIteration; i++){
             res[i - 1] = []
             for(let j = 0; j <= 8 - 1; j++){
@@ -117,7 +131,7 @@ class Pages {
                     res[i - 1].push(obj[j])
                 }
             }
-            obj = obj.filter((item: any, i: number) => i > 8 - 1)
+            obj = obj.filter((item: ProductType, i: number) => i > 8 - 1)
         }
         return res
     }
@@ -157,20 +171,12 @@ class Pages {
     setCurrentPage(num: number){
         this.currentPage = num
     }
+    
     setTotalCount(num: number){
         this.totalCount = num
     }
-    totalCount = 0
-    currentPage = 1
 
-    _filterCompanyName: any = {
-        '/apple': 'Apple',
-        '/samsung': 'Samsung',
-        '/xiaomy': 'Xiaomy',
-        '/huawei': 'Huawei',
-        '/zte': 'ZTE',
-        '/realmy': 'Realmy'
-    }
+    
 
     get filteredPage(){
         return this.pages.filter(page => page.link === this.activeLink)

@@ -22,7 +22,7 @@ const SliderEl: FC<OwnPropsType> = () => {
 
     useEffect(() => {
         setMaxPrice(products.maxPriceOfProducts)
-    }, [products.products])
+    }, [])
 
     return (
         <div style={{padding: '25px 15px'}}>

@@ -1,5 +1,10 @@
+type HeaderItemsType = {
+    link: string
+    name: string
+}
+
 class Header {
-    items = [
+    items: Array<HeaderItemsType> = [
         { link: '/new-products', name: 'Новинки' },
         { link: '/super-price', name: 'Суперцена' },
         { link: '/apple', name: 'Apple' },

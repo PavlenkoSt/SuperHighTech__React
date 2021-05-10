@@ -34,7 +34,7 @@ const ProductPage: FC<OwnProps> = ({ url }) => {
                 </div>
                 <ProductsDesc name={product.name} shortDesc={product.description.short} features={product.features.short} /> 
             </div>
-            <ProductPay price={product.price} inStock={product.inStock} />
+            <ProductPay price={product.price} inStock={product.inStock} id={product.id } />
         </div>
     )
 }

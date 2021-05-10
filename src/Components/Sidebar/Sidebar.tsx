@@ -24,6 +24,9 @@ const Sidebar: FC<RouteComponentProps & OwnPropsType> = ({ sidebarOptions, locat
 
     const searchSearch = location.pathname.match(/\/(search)\/(.+)/)
     const isSearchPage = searchSearch && searchSearch[1] === 'search'
+    const isMainPage = location.pathname === '/'
+    const searchCart = location.pathname.match(/\/(cart)/)
+    const isCartPage = searchCart && searchCart[1] === 'cart'
 
     return (
         <div className={`sideMenu small`}>
@@ -33,10 +36,10 @@ const Sidebar: FC<RouteComponentProps & OwnPropsType> = ({ sidebarOptions, locat
                 inlineCollapsed={true}
             >
                 <SubMenu key="sub1" icon={<AppstoreOutlined />} title="Кабинет">
-                    <NavLink className='sidebar-link' to='/'>Вход | Регистрация</NavLink>
                     <NavLink className='sidebar-link' to='/'>На главную</NavLink>
+                    <NavLink className='sidebar-link' to='/cart'>Корзина</NavLink>
                 </SubMenu>
-            { isSearchPage ? null : (
+            { (isSearchPage || isMainPage || isCartPage) ? null : (
                 <SubMenu key="sub2" icon={<PieChartOutlined />} title="Фильтры">
                     <SliderEl/>
                     <Categories sidebarOptions={sidebarOptions} />

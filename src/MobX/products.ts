@@ -1,4 +1,4 @@
-import { ProductType } from './../storage/products';
+import { ProductType } from './../storage/products'
 import { makeAutoObservable } from "mobx"
 import priceToNumber from "../helpers/priceToNumber"
 import products from "../storage/products"
@@ -8,14 +8,14 @@ class Products{
 
     maxPriceOfProducts = (() => {
         const pricesArr: Array<number> = []
-        products.forEach((product: any) => {
+        products.forEach((product: ProductType) => {
             pricesArr.push(priceToNumber(product.price))
         })
         return Math.max.apply(null, pricesArr)
     })()
 
     searchProducts(searchParam: string){
-        return products.filter((product: any) => {
+        return products.filter((product: ProductType) => {
             const arr = product.name.split(' ').map((el: string) => el.toLowerCase())
             if(arr.indexOf(searchParam.toLowerCase()) !== -1){
                 return true

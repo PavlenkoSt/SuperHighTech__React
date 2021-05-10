@@ -136,3 +136,36 @@
     color: #666;
 }
 
+@media(max-width: 1000px){
+    .product{
+        display: flex;
+        flex-direction: column;
+    }
+    .product-main{
+        width: 100%;
+    }
+    .pay{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px){
+    .product-main{
+        flex-direction: column;
+    }
+    .product-photo{
+        width: 100%;
+    }
+    .product-desc{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .product-name, .pay-price{
+        font-size: 20px;
+    }
+    .pay-stock{
+        font-size: 17px;
+    }
+}

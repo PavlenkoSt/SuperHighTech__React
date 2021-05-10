@@ -4,13 +4,6 @@ import i2 from '../../../assets/main/2.jpg'
 import i3 from '../../../assets/main/3.jpg'
 
 const CarouselEl = () => {
-    const contentStyle: any = {
-        color: '#fff',
-        textAlign: 'center',
-        background: '#364d79',
-        overflow: 'hidden'
-    } 
-    
     return (
         <div className='main-carousel'>
             <Carousel autoplay autoplaySpeed={3000} speed={500} dotPosition='top'>

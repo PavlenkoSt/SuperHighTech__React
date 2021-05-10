@@ -1,5 +1,6 @@
 import { Pagination } from 'antd'
 import { FC } from 'react'
+import { RouteComponentProps, withRouter } from 'react-router'
 import pages from '../../../MobX/pages'
 
 type PaginationType = {
@@ -7,7 +8,14 @@ type PaginationType = {
     animation: () => void
 }
 
-const PaginationEl: FC<PaginationType> = ({ total, animation }) => {
+const PaginationEl: FC<PaginationType & RouteComponentProps> = ({ total, animation, location }) => {
+
+    const searchSearch = location.pathname.match(/\/(search)/)
+    const isSearchPage = searchSearch && searchSearch[1] === 'search'
+
+    if(isSearchPage){
+        return null
+    }
 
     const onChange = (num: number) => {
         animation()
@@ -21,4 +29,4 @@ const PaginationEl: FC<PaginationType> = ({ total, animation }) => {
     )
 }
 
-export default PaginationEl
+export default withRouter(PaginationEl)

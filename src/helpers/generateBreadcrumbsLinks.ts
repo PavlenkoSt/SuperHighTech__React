@@ -33,6 +33,8 @@ export default function generateBreadcrumbsLinks(pathAdress: any, breadcrumbValu
             }else{
                 if(pathWithoutLost === '/search'){
                     breadcrumbs.push({ path: '/' + pathWithoutLost, breadcrumbName: 'Поиск' })
+                }else if(pathWithoutLost === '/cart'){
+                    breadcrumbs.push({ path: '/' + pathWithoutLost, breadcrumbName: 'Корзина' })
                 }else{
                     const name = pathWithoutLost.substr(pathWithoutLost.lastIndexOf('/') + 1)
                     breadcrumbs.push({ path: pathWithoutLost, breadcrumbName: name[0].toUpperCase() + name.substr(1) })

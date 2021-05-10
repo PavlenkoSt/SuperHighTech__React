@@ -15,6 +15,7 @@ import SearchPage from "./Components/SearchPage/SearchPage"
 import Main from "./Components/Main/Main"
 import { Footer } from "antd/lib/layout/layout"
 import Preloader from "./Components/common/Preloader/Preloader"
+import CartContainer from "./Components/Cart/CartContainer"
 
 
 
@@ -59,6 +60,7 @@ const App: FC<RouteComponentProps> = observer(({location}) => {
                         <Switch>
                             <Route path={links} component={CatalogContainer} />
                             <Route path='/search' component={SearchPage} />
+                            <Route path='/cart' component={CartContainer} />
                             <Route path='/' component={Main} />
                         </Switch>
                     </div>
