@@ -16,11 +16,7 @@ class Products{
 
     searchProducts(searchParam: string){
         return products.filter((product: ProductType) => {
-            const arr = product.name.split(' ').map((el: string) => el.toLowerCase())
-            if(arr.indexOf(searchParam.toLowerCase()) !== -1){
-                return true
-            }
-            return false
+            return product.name.toLowerCase().includes(searchParam.toLowerCase())
         })
     }
 
