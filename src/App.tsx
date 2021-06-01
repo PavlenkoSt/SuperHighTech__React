@@ -17,8 +17,6 @@ import { Footer } from "antd/lib/layout/layout"
 import Preloader from "./Components/common/Preloader/Preloader"
 import CartContainer from "./Components/Cart/CartContainer"
 
-
-
 const App: FC<RouteComponentProps> = observer(({location}) => {
   
     const links = header.items.map(item => item.link)
