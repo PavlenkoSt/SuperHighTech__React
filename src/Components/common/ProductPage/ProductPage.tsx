@@ -1,7 +1,7 @@
 import { FC, useEffect } from "react"
 import products from "../../../MobX/products"
 import ProductsDesc from "./ProductDesc/ProductDesc"
-import './productPage.css'
+import './productPage.scss'
 import ProductPay from "./ProductPay/ProductPay"
 
 type OwnProps = {

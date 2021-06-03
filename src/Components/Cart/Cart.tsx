@@ -1,6 +1,6 @@
 import { FC } from "react"
 import CartHeader from "./CartHeader/CartHeader"
-import './cart.css'
+import './cart.scss'
 import CartBill from "./CartBill/CartBill"
 import { animated } from "@react-spring/web"
 import { ToastContainer } from 'react-toastify'

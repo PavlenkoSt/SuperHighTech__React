@@ -4,7 +4,7 @@ import { HashRouter, Route, RouteComponentProps, Switch, withRouter } from 'reac
 import Header from "./Components/Header/Header"
 import { Layout } from 'antd'
 import 'antd/dist/antd.css'
-import './App.css'
+import './App.scss'
 import CatalogContainer from "./Components/Catalog/CatalogContainer"
 import generateBreadcrumbsLinks from "./helpers/generateBreadcrumbsLinks"
 import BreadcrumbElem from "./Components/common/Breadcrumb/Breadcrumb"

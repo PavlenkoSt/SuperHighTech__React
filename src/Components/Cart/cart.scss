@@ -2,44 +2,45 @@
     width: 100%;
     color: #333;
     margin-top: 20px;
-    border: 2px solid rgb(161, 161, 161)
-}
-
-.cart-table thead tr,
-.cart-table tbody tr{
-    border-bottom: 2px solid rgb(161, 161, 161);
-}
-
-.cart-table tbody tr:last-child{
-    border-bottom: none;
-}
-
-.cart-table tbody td:nth-child(4){
-    padding: 0 15px;
-}
-
-.cart-table thead td{
-    font-weight: 700;
-    padding: 5px 10px;
-}
-
-.cart-table td{
-    text-align: center;
-    border-right: 2px solid rgb(161, 161, 161);
-}
-
-.cart-table thead td:nth-child(2){
-    text-align: left;
+    border: 2px solid rgb(161, 161, 161);
+    & thead{
+        & tr{
+            border-bottom: 2px solid rgb(161, 161, 161);
+            & td{
+                font-weight: 700;
+                padding: 5px 10px;
+                &:nth-child(2){
+                    text-align: left;
+                }
+            }
+        }
+    }
+    & tbody{
+        & tr{
+            border-bottom: 2px solid rgb(161, 161, 161);
+            &:last-child{
+                border-bottom: none;
+            }
+            & td{
+                &:nth-child(4){
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+    & td{
+        text-align: center;
+        border-right: 2px solid rgb(161, 161, 161);
+    }
 }
 
 .cart-name{
     display: flex;
     text-align: left;
-}
-
-.cart-name span{
-    display: flex;
-    align-items: center;
+    & span{
+        display: flex;
+        align-items: center;
+    }
 }
 
 .cart-photo{
@@ -49,17 +50,17 @@
 }
 
 .cart-delete{
-   border: none;
-   margin: 0;
-   padding: 0;
-   background-color: #fff;
-   color: rgb(255, 58, 58);
-   font-size: 24px;
-   cursor: pointer;
-   transition: all ease-in .3s;
-}
-.cart-delete:hover{
-    color: rgb(255, 6, 6);
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: rgb(255, 58, 58);
+    font-size: 24px;
+    cursor: pointer;
+    transition: all ease-in .3s;
+    &:hover{
+        color: rgb(255, 6, 6);
+    }
 }
 
 .cart-count{
@@ -79,23 +80,22 @@
     color: #333;
     cursor: pointer;
     transition: all ease .2s;
-}
-
-.cart-count-btn:hover{
-    color: #000;
-}
-
-.cart-count-btn:disabled{
-    color: rgb(160, 160, 160);
+    &:hover{
+        color: #000;
+    }
+    &:disabled{
+        color: rgb(160, 160, 160);
+    }
 }
 
 .cart-bill{
     font-weight: 600;
-}
-
-.cart-bill td:first-child{
-    text-align: left;
-    padding: 5px 15px;
+    & td{
+        &:first-child{
+            text-align: left;
+            padding: 5px 15px;
+        }
+    }
 }
 
 .cart-pay{
@@ -112,10 +112,9 @@
     background-color: rgb(255, 193, 77);
     cursor: pointer;
     transition: all ease .2s;
-}
-
-.cart-pay:hover{
-    background-color: rgb(252, 167, 9);
+    &:hover{
+        background-color: rgb(252, 167, 9);
+    }
 }
 
 @media(max-width: 1000px){

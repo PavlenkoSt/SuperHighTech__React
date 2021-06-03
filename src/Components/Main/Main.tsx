@@ -1,6 +1,6 @@
 import CarouselEl from './Carousel/Carousel'
 import SuperPrice from './SuperPrice/SuperPrice'
-import './main.css'
+import './main.scss'
 import { useEffect } from 'react'
 import pages from '../../MobX/pages'
 import ProductPage from '../common/ProductPage/ProductPage'

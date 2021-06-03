@@ -12,7 +12,6 @@ import Cart from "./Cart"
 import CartItem from "./CartItem/CartItem"
 
 
-
 const CartContainer: FC<RouteComponentProps> = observer(({ location }) => {
 
     const productsInCart = cart.productsInCart.map((product: ProductType, index: number) => {

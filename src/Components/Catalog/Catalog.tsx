@@ -1,6 +1,6 @@
 import { FC } from "react"
 import Sort from "./Sort/Sort"
-import './catalog.css'
+import './catalog.scss'
 import PaginationEl from "../common/Pagination/Pagination"
 
 

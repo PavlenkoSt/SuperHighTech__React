@@ -50,14 +50,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.catalog-item:hover{
-    border: 1px solid #ed6b21;
-}
-
-.catalog-item:hover .catalog-photo{
-    transform: scale(1.1);
+    &:hover{
+        border: 1px solid #ed6b21;
+        & .catalog-photo{
+            transform: scale(1.1);
+        }
+    }
 }
 
 .catalog-photo{
@@ -76,10 +74,9 @@
     display: block;
     margin-bottom: 10px;
     transition: all ease .2s;
-}
-
-.catalog-name:hover{
-    color: #ed6b21;
+    &:hover{
+        color: #ed6b21;
+    }
 }
 
 .catalog-price{
@@ -107,12 +104,11 @@
     border: 1px solid #ed6b21;
     transition: all ease .3s;    
     cursor: pointer;
-}
-
-.btn-order:hover{
-    background: transparent;
-    border: 1px solid #333;
-    color: #333;
+    &:hover{
+        background: transparent;
+        border: 1px solid #333;
+        color: #333;
+    }
 }
 
 @media(max-width: 1500px){

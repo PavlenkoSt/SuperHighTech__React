@@ -5,7 +5,7 @@ import {
   SearchOutlined
 } from '@ant-design/icons'
 import SliderEl from './Slider/Slider'
-import './sidebar.css'
+import './sidebar.scss'
 import Categories from './Categories/Categories'
 import { FC } from 'react'
 import { NavLink, RouteComponentProps, withRouter } from 'react-router-dom'
