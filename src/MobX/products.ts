@@ -23,15 +23,14 @@ class Products{
     getProductsForMainPage(){
         const allProducts = this.products.reverse()
         const resultProducts = []
-        for(let i = 0; i<=3; i++){
+        for(let i = 0; i <= 3; i++){
             resultProducts.push(allProducts[i])
         }
         return resultProducts
     }
 
     getProductForProductPage(url: string){
-        const filteredProduct = products.filter((product: ProductType) => product.url === url)
-        return filteredProduct[0]
+        return products.find((product: ProductType) => product.url === url)
     }
 
     getNameFromUrl(url: string){
