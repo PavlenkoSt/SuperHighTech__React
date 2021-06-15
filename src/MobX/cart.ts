@@ -15,17 +15,16 @@ class Cart {
     getAllSumFromCart(){
         let sum = 0
         this.cart.forEach(item => {
-            const product = products.filter((product: ProductType) => product.id === item.id)
-            sum += priceToNumber(product[0].price) * item.count
+            const product = products.find((product: ProductType) => product.id === item.id)
+            sum += priceToNumber(product.price) * item.count
         })
         return numbersToPrice(sum)
     }
 
     addProductToCart(id: number){
-        const cartItems = this.cart.filter(item => item.id === id)
-        if(cartItems.length){
-            const cartItem = cartItems[0]
-            cartItem.count = cartItem.count + 1
+        const cartItem = this.cart.find(item => item.id === id)
+        if(cartItem){
+            cartItem.count += 1
             this.cart = [...this.cart.filter(item => item.id !== id), cartItem]
         }else{
             this.cart.push({ id, count: 1 })
@@ -43,16 +42,17 @@ class Cart {
     }
 
     changeCountProductOfCart(id: number, addMode: boolean){
-        const product = this.cart.filter(item => item.id === id)
-        const productItem = product[0]
-        if(addMode){
-            productItem.count = productItem.count + 1
-        }else{
-            if(productItem.count > 1){
-                productItem.count = productItem.count - 1
+        const productItem = this.cart.find(item => item.id === id)
+        if(productItem){
+            if(addMode){
+                productItem.count += 1
+            }else{
+                if(productItem.count > 1){
+                    productItem.count -= 1
+                }
             }
+            this.cart = [...this.cart.filter(item => item.id !== id), productItem ]
         } 
-        this.cart = [...this.cart.filter(item => item.id !== id), productItem ]
     }
 
     deleteProductFromCart(id: number){
