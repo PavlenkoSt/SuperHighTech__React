@@ -115,11 +115,6 @@ class Pages {
         return result
     }
 
-    constructor(){
-        makeAutoObservable(this)
-    }
-
-
     splitProductsToPortion(arr: Array<ProductType>){
         let obj: Array<ProductType> = Object.assign(arr)
         const countIteration = Math.ceil(arr.length / 8)
@@ -152,12 +147,12 @@ class Pages {
                 this.setTotalCount(sideFilteredProducts.length)
                 return this.splitProductsToPortion(this.useSortedOption(this.useSideFilteredOptions(filteredProducts)))
             }
-            case '/apple' : 
-            case '/samsung' : 
-            case '/xiaomi' : 
-            case '/huawei' : 
-            case '/zte' : 
-            case '/realmy': {
+            case '/apple': 
+            case '/samsung': 
+            case '/xiaomi': 
+            case '/huawei': 
+            case '/zte': 
+            case '/realmy':{
                 const filteredProducts = products.filter((product: ProductType) => product.company === this._filterCompanyName[this.activeLink])
                 this.activeProducts = filteredProducts
                 const sideFilteredProducts = this.useSideFilteredOptions(filteredProducts)
@@ -176,12 +171,13 @@ class Pages {
         this.totalCount = num
     }
 
-    
-
     get filteredPage(){
         return this.pages.filter(page => page.link === this.activeLink)
     }
 
+    constructor(){
+        makeAutoObservable(this)
+    }
 }
 
 export default new Pages()
